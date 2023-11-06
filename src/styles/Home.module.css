@@ -1,0 +1,10 @@
+  #layout {
+    margin-top: 50px;
+  }
+
+@media (min-width: 1200px) {
+    #layout {
+      padding-right: 200px;
+      padding-left: 200px;
+    }
+  }

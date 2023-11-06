@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button"
 export default function HeroSection() {
     return (
         <>
-            <Container className="md:mx-5 md:my-5" style={{marginTop: '80px'}}>
+            <Container>
                 <Row className="flex-column flex-md-row">
                     <Col className="d-flex align-items-center justify-content-center">
                         <Image alt="person" src="/profile.png" width={325} height={325} rounded/>
@@ -28,7 +28,6 @@ export default function HeroSection() {
                     </Col>
                 </Row>
             </Container>
-        
         </>
     )
 
