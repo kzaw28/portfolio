@@ -7,7 +7,7 @@ export default function SelectedWorkSection() {
 
     const works = [
         { title: 'Dall E Community', description: 'A full-stack web application that leverages the power of AI. This project showcases the integration of AI technologies in a community-based platform.', image: '/images/dall-e-community.png', link: 'https://sparkling-duckanoo-d278f0.netlify.app/'},
-        { title: 'Urban Ease Quoting Tool', description: 'Centralized software to mimic a quotation tool, that uses AI to recommend products which is build on top of NodeJS.', image: '/images/urban-ease.png', link: 'https://github.com/KrinsKumar/Aztech' },
+        { title: 'Urban Ease (Hackathon Winning)', description: 'Centralized software to mimic a quotation tool, that uses AI to recommend products which is build on top of NodeJS.', image: '/images/urban-ease.png', link: 'https://github.com/KrinsKumar/Aztech' },
         { title: 'Museum API', description: 'End-to-end developed website for browsing museum artworks, includes user authentication, authorizatin and cookies usage. Both front end and the server is custom made.', image: '/images/museum.png', link: 'https://artapi-6.vercel.app/' },
     ];
 
