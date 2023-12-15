@@ -1,18 +1,32 @@
-import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
-export default function WorkCard() {
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
+import Link from 'next/link'
+
+export default function WorkCard({ title, description, image, link }) {
 
     return (
         <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-            </Card.Text>
-            </Card.Body>
+            <Row>
+                <Col xs={5}>
+                    <Card.Img variant="top" src={image} />
+                </Col>
+                <Col>
+                    <Card.Body style={{ display: 'flex', flexDirection: 'column' }} >
+                        <Card.Title>{title}</Card.Title>
+                        <Card.Text className='fs-6'>
+                            {description}
+                        </Card.Text>
+
+                        <Link href={link}>                        
+                            <Button size="sm" variant="danger" style={{ marginTop: 'auto' }}>Check it out</Button>
+                        </Link>
+                    </Card.Body>
+                </Col>
+            </Row>
         </Card>
     )
 }
